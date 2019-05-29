@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "212069520875",
+    "firebase_url": "https://organize-72a73.firebaseio.com",
+    "project_id": "organize-72a73",
+    "storage_bucket": "organize-72a73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212069520875:android:7c6a33484c0ba1d5",
+        "android_client_info": {
+          "package_name": "com.example.morgana.testeestagio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212069520875-okg15m9h98oton9c1dt61o1g8lsdjeq3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.morgana.testeestagio",
+            "certificate_hash": "e49910a4f4d40b0e1daa561f70a75dc1c7d814c3"
+          }
+        },
+        {
+          "client_id": "212069520875-5pcch9156mof0utou8hlq16d58ekps91.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd0ae6hckWVcSEwXATES7UHdzLpGDaG9w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212069520875-5pcch9156mof0utou8hlq16d58ekps91.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

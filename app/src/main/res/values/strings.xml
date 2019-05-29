@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Organize</string>
+    <string name="btncadastro">Cadastrar-se</string>
+    <string name="textNome">Nome ou Apelido</string>
+    <string name="textEmail">Email</string>
+    <string name="textSenha">Senha</string>
+    <string name="btncadastrar">Cadastrar</string>
+    <string name="itemdados">Dados pessoais</string>
+    <string name="itemsair">Sair</string>
+    <string-array name="stausat">
+        <item>Novo</item>
+        <item>Em andamento</item>
+        <item>Parado</item>
+        <item>Concluído</item>
+
+
+    </string-array>
+    <string-array name="prioridades">
+        <item>Normal</item>
+        <item>Baixa</item>
+        <item>Alta</item>
+        <item>Imediata</item>
+
+
+
+    </string-array>
+
+</resources>

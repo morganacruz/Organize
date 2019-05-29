@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtividadeListaActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textnomeat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Nome Atividade"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tdescat"
+        app:layout_constraintEnd_toEndOf="@+id/tdescat"
+        app:layout_constraintStart_toStartOf="@+id/textdataat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tdescat"
+        android:layout_width="311dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="19dp"
+        android:text="Descricao"
+        app:layout_constraintBottom_toTopOf="@+id/textdataat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textnomeat" />
+
+    <TextView
+        android:id="@+id/textdataat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:text="Data"
+        app:layout_constraintBottom_toTopOf="@+id/statat"
+        app:layout_constraintEnd_toEndOf="@+id/tdescat"
+        app:layout_constraintStart_toStartOf="@+id/prioat"
+        app:layout_constraintTop_toBottomOf="@+id/tdescat" />
+
+    <TextView
+        android:id="@+id/statat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="28dp"
+        android:text="Status"
+        app:layout_constraintBottom_toTopOf="@+id/prioat"
+        app:layout_constraintEnd_toEndOf="@+id/prioat"
+        app:layout_constraintStart_toStartOf="@+id/btnatualizaativi"
+        app:layout_constraintTop_toBottomOf="@+id/textdataat" />
+
+    <TextView
+        android:id="@+id/prioat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="81dp"
+        android:text="Prioridade"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnatualizaativi"
+        app:layout_constraintEnd_toEndOf="@+id/tdescat"
+        app:layout_constraintStart_toStartOf="@+id/btnatualizaativi"
+        app:layout_constraintTop_toBottomOf="@+id/statat" />
+
+    <Button
+        android:id="@+id/btnatualizaativi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="@color/corPrinc"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:text="Atualizar Atividade"
+        android:textColor="#fff"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnexcluiativi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prioat" />
+
+    <Button
+        android:id="@+id/btnexcluiativi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="@color/corPrinc"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:text="Excluir Atividade"
+        android:textColor="#fff"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnatualizaativi" />
+
+
+</android.support.constraint.ConstraintLayout>

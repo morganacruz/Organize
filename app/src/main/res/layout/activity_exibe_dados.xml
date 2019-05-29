@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExibeDadosActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:layout_width="198dp"
+        android:layout_height="28dp"
+        android:text="Dados Pessoais"
+        android:textColor="@color/preto"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textExibeNome"
+        android:layout_width="305dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="424dp"
+        android:text="Nome"
+        android:textColor="@color/preto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textExibeSenha"
+        android:layout_width="304dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="204dp"
+        android:text="Senha"
+        android:textColor="@color/preto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textExibeEmail"
+        android:layout_width="299dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="102dp"
+        android:text="Email"
+        android:textColor="@color/preto"
+        app:layout_constraintBottom_toBottomOf="@+id/textExibeSenha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>

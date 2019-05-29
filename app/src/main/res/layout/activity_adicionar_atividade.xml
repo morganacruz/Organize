@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdicionarAtividadeActivity">
+
+    <TextView
+        android:id="@+id/textNomeProj"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="19dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/edtNomeativi"
+        app:layout_constraintEnd_toEndOf="@+id/edtNomeativi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNomeativi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:ems="10"
+        android:hint="Nome da Atividade"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtdescativi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNomeProj" />
+
+    <EditText
+        android:id="@+id/edtdescativi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:ems="10"
+        android:hint="Descrição da atividade"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtdata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeativi" />
+
+    <EditText
+        android:id="@+id/edtdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="data:01/01"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtdescativi" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="174dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginStart="16dp"
+        android:text="Status da atividade"
+        android:textColor="@color/preto"
+        app:layout_constraintBottom_toTopOf="@+id/sprstatusatv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtdata" />
+
+    <Spinner
+        android:id="@+id/sprstatusatv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:entries="@array/stausat"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="116dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Prioridade"
+        android:textColor="@color/preto"
+        app:layout_constraintBottom_toTopOf="@+id/spirprioriatv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sprstatusatv" />
+
+    <Spinner
+        android:id="@+id/spirprioriatv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:entries="@array/prioridades"
+        app:layout_constraintBottom_toTopOf="@+id/btninseratv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btninseratv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="Inserir Atividade"
+        android:textColor="#fff"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:backgroundTint="@color/corPrinc"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spirprioriatv" />
+
+</android.support.constraint.ConstraintLayout>
